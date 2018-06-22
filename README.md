@@ -31,5 +31,3 @@ DESKTOP
 https://www.figma.com/file/Cfp7hlH78A6xF3NpKhQJtkR5/Untitled
 
 
-
-
