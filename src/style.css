@@ -1,0 +1,132 @@
+.container-fluidFirst{
+  background-color: yellow;
+  padding: 0%;
+
+}
+.container-fluid{
+  padding: 0%;
+  height: 10px;
+}
+.row{
+  padding: 0%;
+  text-align: center;
+  height: 200%;
+}
+.col-3{
+  background-color: yellow;
+  padding: 1%;
+  width: 27%;
+  height: 600px;
+}
+.avatarUser{
+  border-radius: 80%;
+  text-align: center;
+}
+.col-9{
+  background-color: unset;
+}
+.dropdownMenuButton{
+  padding: 2%;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 2%;
+} 
+.fotoAvatar{
+  padding: 0%;
+  width: 20%;
+  height: 10%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+} 
+/*Configuraciones generales de las columnas dentro de la grilla*/
+
+.col-6 {
+  margin-left: 350px;
+  margin-top: 100px;
+  font-family: 'Bitter', serif;
+ }
+ 
+ .login {
+  margin-left: 100px;
+  margin-top: 50px;
+ }
+ 
+ #access {
+  font-family: 'Bitter', serif;
+ }
+ 
+ #caja-2 {
+  display: none;
+ }
+ 
+ .col-2 {
+  background-color: white;
+  height: 100px;
+  border: 4px solid white;
+  content: url("imagenes/logo2.jpeg");
+ }
+ 
+ .col-2-costado {
+  background-color: #FFE521;
+  height: 100px;
+  width: 900px;
+  border: 6px solid white;
+  text-align: center;
+  font-family: 'Bitter', serif;
+ }
+ 
+ .col-2-columna {
+  background-color: #FFE521;
+  height: 500px;
+  border: 4px solid white;
+  width: 200px;
+ }
+ 
+ .col-3-costado {
+  background-color: ffffff;
+  height: 200px;
+  width: 400px;
+  border: 4px solid white;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  line-height: 100px;
+ }
+ 
+ /*Se define la configuración del avatar de usuario*/
+ 
+ .avatarUser {
+  height: 150px;
+  width: 150px;
+  background-position: 50%;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  font-family: 'Bitter', serif;
+ }
+ 
+ /*Aquí vamos a definir la ubicación del avatar del estudiante dentro de la tarjeta*/
+ 
+ .avatarStudent {
+  height: 150px;
+  width: 150px;
+  background-position: 50%;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  float: left;
+ }
+ 
+ .studentInfo {
+  float: left;
+  padding: 10px;
+ }
+ 
+ .card {
+  /* Aquí se definen las sombras para que resalte y se vea como una tarjeta */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 400px;
+  width: 800px;
+  padding-top: 10px;
+  padding-left: 0px;
+ }

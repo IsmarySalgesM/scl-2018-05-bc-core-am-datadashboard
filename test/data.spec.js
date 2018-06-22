@@ -75,8 +75,9 @@ describe('data', () => {
   });
 
   describe('sortUsers(users, orderBy, orderDirection)', () => {
-
+    sortUsers = (users, orderBy, orderDirection)
     it('debería retornar arreglo de usuarios ordenado por nombre ASC');
+
     it('debería retornar arreglo de usuarios ordenado por nombre DESC');
     it('debería retornar arreglo de usuarios ordenado por porcentaje general ASC');
     it('debería retornar arreglo de usuarios ordenado por porcentaje general DESC');
@@ -92,6 +93,7 @@ describe('data', () => {
   });
 
   describe('filterUsers(users, filterBy)', () => {
+    
 
     it('debería retornar nuevo arreglo solo con usuarios con nombres que contengan string (case insensitive)');
 
