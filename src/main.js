@@ -2,18 +2,20 @@
 window.database.users = [];
 window.database.progress = [];
 window.database.cohorts = [];
- 
 */
 
 const btnSearch = document.getElementById('menuButton');
 const container = document.getElementById('datosTabla');
 const inputText = document.getElementById('root'); 
 
+
+
 inputText.addEventListener('keypress', (event) => {
 let key = event.which || event.keyCode;
 if (key === 13) { // código 13 es enter
 let search = inputText.value;
-
+}
+});
 
   btnSearch.addEventListener('click', () => {
   const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
@@ -37,15 +39,22 @@ let search = inputText.value;
       const progreso = Object.entries(responseJsons[1]);
       const courses = Object.entries(responseJsons)
       const progresoEstudiante = progreso.find(elemento => elemento[0] === estudiante.id);
-      //  renderUsers(window.sortUsers(data, "name", "ASC")); 
+      // renderUsers(window.sortUsers(data, "name", "ASC")); 
     
-      return container.innerHTML += `<p>${estudiante.name}</p>`;
+      return container.innerHTML += '<tr>' +
+      '<td>' + estudiante.name.toUpperCase() + '</td>' +
+      '<td>' + + '</td>' +
+      '<td>' + + '</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '<td>' + +'</td>' +
+      '</tr>';
     });
-    
   });
-})
-}
-})
+});
+
+
   /*
   fetch('../data/cohorts/lim-2018-03-pre-core-pw/users.json')
     .then((response) => {
