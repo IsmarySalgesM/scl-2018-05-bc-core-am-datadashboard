@@ -24,10 +24,10 @@ Es por ello que este reto se trato de realizar una data-dashboard donde es una h
 
 # Sketch
 
-![Alt Text](scl-2018-05-bc-core-am-datadashboard\src\imagenes\1.jpg)
-![Alt Text](scl-2018-05-bc-core-am-datadashboard\src\imagenes\2.jpg)
-![Alt Text](scl-2018-05-bc-core-am-datadashboard\src\imagenes\3.jpg)
-![Alt Text](scl-2018-05-bc-core-am-datadashboard\src\imagenes\4.jpg)
+![Alt Text]https://imageshack.com/i/po1wo2S0j
+![Alt Text]https://imageshack.com/i/porTooKoj
+![Alt Text]https://imageshack.com/i/plvSj2hDj
+![Alt Text]https://imageshack.com/i/pm4uPMhaj
 
 
 # Prototipo Figma 
