@@ -1,21 +1,15 @@
-/*window.database = {};
+window.database = {};
 window.database.users = [];
 window.database.progress = [];
 window.database.cohorts = [];
-*/
+
 
 const btnSearch = document.getElementById('menuButton');
 const container = document.getElementById('datosTabla');
-const inputText = document.getElementById('root'); 
-
-
-
-inputText.addEventListener('keypress', (event) => {
-let key = event.which || event.keyCode;
-if (key === 13) { // código 13 es enter
-let search = inputText.value;
-}
-});
+const input = document.getElementById("myInput");
+const filter = input.value.toUpperCase();
+const table = document.getElementsByTagName("datosTabla");
+const tr = document.getElementsByTagName("tr");
 
   btnSearch.addEventListener('click', () => {
   const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
@@ -31,7 +25,6 @@ let search = inputText.value;
     (responses) => { // Responde a todas las promesas
       return Promise.all(responses.map((response) => { //me devolvía un arreglo.json de los 3
         return response.json();
-        console.log(response.json);
       }));
     }
   ).then((responseJsons) => { // Arreglo de respuestas en json
@@ -39,9 +32,21 @@ let search = inputText.value;
       const progreso = Object.entries(responseJsons[1]);
       const courses = Object.entries(responseJsons)
       const progresoEstudiante = progreso.find(elemento => elemento[0] === estudiante.id);
-      // renderUsers(window.sortUsers(data, "name", "ASC")); 
+      renderUsers(window.sortUsers(data, "name", "ASC"));
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        } 
+      }
+      });
+     
     
-      return container.innerHTML += '<tr>' +
+       return container.innerHTML += '<tr>' +
       '<td>' + estudiante.name.toUpperCase() + '</td>' +
       '<td>' + + '</td>' +
       '<td>' + + '</td>' +
@@ -50,10 +55,12 @@ let search = inputText.value;
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
       '</tr>';
-    });
+      
+    
+    
   });
-});
 
+})
 
   /*
   fetch('../data/cohorts/lim-2018-03-pre-core-pw/users.json')

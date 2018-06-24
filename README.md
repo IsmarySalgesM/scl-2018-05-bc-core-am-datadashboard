@@ -22,6 +22,10 @@ Es por ello que este reto se trato de realizar una data-dashboard donde es una h
     3) Que colores te gustaria en la datadasboard?
         R= Colores : Fucsia, Amarillo y Menta.
 
+# Steck 
+
+![Alt Text](C:\Users\Ismary\Desktop\Laboratoria\proyecto-dos\scl-2018-05-bc-core-am-datadashboard\src\imagenes\1.jpg)
+
 # Prototipo Figma 
 MOBILE
 https://www.figma.com/proto/Cfp7hlH78A6xF3NpKhQJtkR5/Untitled?scaling=contain&node-id=72%3A39
