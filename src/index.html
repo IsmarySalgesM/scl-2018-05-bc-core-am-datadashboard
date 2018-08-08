@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lms</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+  <div class="container-fluidFirst">
+    <img src="imagenes/logo_laboratoria.png" class="fotoAvatar" alt="">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <img class="avatarUser" src="imagenes/avatar.vale.jpg" alt="">
+        <p>Hola, Valentina Smith</p>
+        <div class="dropdown">
+          <a class="btn bg-dark text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Cohorts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" id="menuButton" href="#">Lima</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <table class="table" id="tablePrint">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Alumnas</th>
+              <th scope="col">Ejercicios (Total,Completados,Porcentaje)</th>
+              <th scope="col">Quizzes (Total,Completados,Porcentaje)</th>
+              <th scope="col">Lecturas (Total,Completados,Porcentaje)</th>
+              <th scope="col">Completitud %</th>
+            </tr>
+          </thead>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,42 @@
+.container-fluidFirst {
+  background-color:yellow;
+  padding: 0%;
+
+}
+.container-fluid{
+  padding: 0%;
+  height: 10px;
+}
+.row{
+  padding: 0%;
+  text-align: center;
+}
+.col-6 {
+  background-color: yellow;
+  position: absolute;
+  width: 30%;
+  height: 200%;
+}
+.avatarUser{
+  border-radius: 80%;
+  text-align: center;
+}
+.col-9{
+  background-color: unset;
+  position: relative;
+  left: 24%;
+}
+.dropdownMenuButton{
+  padding: 2%;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 2%;
+} 
+.fotoAvatar{
+  padding: 1%;
+  width: 23%;
+  height: 10%;
+  margin-bottom: 2%;
+  margin-left:1%;
+  
+} 
